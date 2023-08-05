@@ -30,14 +30,14 @@ except Exception as e:
 
 USER_SESSION = environ.get("USER_SESSION")
 DATABASE_NAME = environ.get("DATABASE_NAME", "SangteiDB")
-TZ = environ.get("TZ", "Asia/Jakarta")
+TZ = environ.get("TZ", "Asia/Kolkata")
 COMMAND_HANDLER = environ.get("COMMAND_HANDLER", "! /").split()
 SUDO = list(
     {
         int(x)
         for x in environ.get(
             "SUDO",
-            "617426792 2024984460",
+            "6161727895 1060318977",
         ).split()
     }
 )
@@ -52,13 +52,13 @@ FORWARD_FROM_CHAT_ID = list(
         int(x)
         for x in environ.get(
             "FORWARD_FROM_CHAT_ID",
-            "-1001128045651 -1001455886928 -1001686184174",
+            "-1001826367325 -1001971791913",
         ).split()
     }
 )
 # Forward To Chat ID
 FORWARD_TO_CHAT_ID = list(
-    {int(x) for x in environ.get("FORWARD_TO_CHAT_ID", "-1001210537567").split()}
+    {int(x) for x in environ.get("FORWARD_TO_CHAT_ID", "-1001971791913").split()}
 )
 FORWARD_FILTERS = list(set(environ.get("FORWARD_FILTERS", "video document").split()))
 BLOCK_FILES_WITHOUT_EXTENSIONS = bool(
