@@ -40,8 +40,8 @@ except:
 
 dotenv.load_dotenv(".env", override=True)
 
-UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL")
-UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH")
+UPSTREAM_REPO_URL = os.environ.get("https://github.com/lalrochhara/Sangtei")
+UPSTREAM_REPO_BRANCH = os.environ.get("master")
 
 if all([UPSTREAM_REPO_URL, UPSTREAM_REPO_BRANCH]):
     if os.path.exists(".git"):
